@@ -7,12 +7,12 @@ import fetch from "node-fetch"
 import axios from "axios"
 import moment from "moment-timezone"
 import { en, es, id, ar, pt, fr, hi } from "./lib/idiomas/total-idiomas.js"
- 
+
 //⊱ ━━━━━.⋅ Añada los numeros a ser Propietario/a | Add the numbers to be Owner ⋅.━━━━ ⊰  
 
 global.owner = [
-["573026191480", '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿 💖🐈', true],
-["5492266466080", '𝙊𝙬𝙣𝙚𝙧 💖🐈', true], 
+["5492266466080", '𝙊𝙬𝙣𝙚𝙧 💖🐈', true], //𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿 💖🐈
+["573026191480"], 
 ["5492266466080"], 
 ["593968585383"], 
 ["5492266613038"],
@@ -20,6 +20,11 @@ global.owner = [
 ["5217294888993"]]
 
 //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ฅ^•ﻌ•^ฅ
+
+//BETA: Si quiere evitar escribir el número que será bot en la consola, agregué desde aquí entonces:
+//Sólo aplica para opción 2 (ser bot con código de texto de 8 digitos)
+global.botNumberCode = "" //Ejemplo: +59309090909
+global.confirmCode = ""
 
 global.mods = []
 global.prems = ["528451003894"]
@@ -112,7 +117,7 @@ global.author = "𝙂𝙖𝙩𝙖 𝘿𝙞𝙤𝙨"
 
 //⊱ ━━━━━.⋅ Versión | Nombre | cuentas ⋅.━━━━ ⊰
 
-global.vs = "1.4.9"
+global.vs = "1.7.0"
 global.vsJB = "2.5 (Beta)"
 
 global.gt = "𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿"
